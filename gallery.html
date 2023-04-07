@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    
+    header{
+        display: flex;
+        justify-content: space-evenly;
+        position: fixed;
+        top: 0;
+    }
+
+    .pavin{
+        text-align: center;
+        background-color: cadetblue;
+        border-radius: 10px;
+        
+    }
+
+    .pic{
+        padding: 30px;
+        margin-top: 20px;
+        border-radius: 5px;
+        width: 240px;
+        height: auto;
+        background-color: cadetblue;
+        color: antiquewhite;
+    }
+    .pic1{
+        margin: 30px;
+        margin-left: 18%;
+        padding: 30px;
+        border-radius: 5px;
+        width: 45%;
+        height: auto;
+        background-color: cadetblue;
+        color: antiquewhite;
+    }
+    @media screen and (max-width: 900px){
+        header{
+            width: auto;
+        }
+        header h1{
+            font-size: 20px;
+        }
+        .cnt1{
+            display: block;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+    }
+</style>
+<body>
+    <header>
+        <h1 style="color: whitesmoke;"> Area of Interests & My Projects:</h1>
+        <div class="nav-link">
+           
+           <a href="index.html"><h2>Home</h2></a>
+        </div>
+    </header>
+    <br> <br>
+    <div class="cnt1" style="width: 80%; margin: 30px; border-radius: 5px; display: flex; justify-content: space-evenly;">
+        <div class="pavin">
+            <img src="pavin.jpg" style="height: 250px">
+            <h2 style="color: whitesmoke;">Pavin P S</h2>
+        </div>
+        <div class="pic">
+            <h2>Area of Interests:</h2>
+            <br>
+            <ul>
+                <li><h3>Web Development.</h3></li>
+                <li><h3>Bio-Medical Instrumentation.</h3></li>
+                <li><h3>Embedded Programming.</h3></li>
+                <li><h3>Sensors & Measurement.</h3></li>
+                <li><h3>MEMS.</h3></li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <div class="pic1">
+        <h2>My Projects:</h2>
+        <br>
+        <ul>
+            <li>Image Processing Based Rain Removal Solution for Autonomous Vehicle.
+                <ul style="margin-left: 15px;">
+                    <li><p>
+                        I contributed my idea & Solution with Image Processing in MATLAB Software. <br>
+                        I used Image thresholding, Image Filtering methodology in Seperating Foreground(Rain Drop) of the Image.
+
+                        </p></li>
+                </ul>
+            </li>
+            <br>
+            <li>Non-Invasive Human Emotion Detection.
+                <ul style="margin-left: 15px;">
+                    <li><p>
+                        My contribution in this is developing a GSR sensor module for effective emotion detection.
+                    </p></li>
+                </ul>
+            </li>
+            <br>
+            <li> Web-based Diploma Student percentage calculator.
+                <ul style="margin-left: 15px;">
+                    <li><p>
+                        I Developed a Webpage for calculating Diploma student overall percentage calculator. <br>
+                        I used HTML, CSS for Website development & used Javascript for the Mathmatical Calculations.
+                    </p></li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+</body>
+</html>
